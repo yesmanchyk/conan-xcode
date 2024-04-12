@@ -22,6 +22,7 @@ class alphaRecipe(ConanFile):
 
     def requirements(self):
         self.requires('boost-ext-ut/2.0.1')
+        self.requires('spdlog/1.11.0')
 
     def layout(self):
         cmake_layout(self)

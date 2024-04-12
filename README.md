@@ -59,3 +59,10 @@ pushd build/Debug/generators/
 cmake ../../.. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Debug
 cmake --build . && ./alpha
 ```
+
+13. When you create new file in Xcode, make sure you update `CMakeLists.txt`.
+
+14. You can also add more dependencies, after that you'll need to repeat steps 3. and 4. to regenerate project:
+```
+bash regenerate.sh
+```
