@@ -20,6 +20,9 @@ class alphaRecipe(ConanFile):
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*"
 
+    def requirements(self):
+        self.requires('boost-ext-ut/2.0.1')
+
     def layout(self):
         cmake_layout(self)
 
