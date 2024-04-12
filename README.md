@@ -46,3 +46,16 @@ popd
 ![macOS Deployment Target](img/deployment-target.png)
 
 10. Select your macOS version and you'll be able to run the project now.
+
+11. Use `boost::ut` like here https://github.com/yesmanchyk/conan-xcode/commit/94f9109ee335b8b44fc2d4f0538310bc3e602bc8. You may run your tests in terminal using conan.
+```
+conan create . --build=missing
+```
+
+12. You can also build and run tests without Xcode.
+```
+conan install . --build=missing -s build_type=Debug
+pushd build/Debug/generators/
+cmake ../../.. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Debug
+cmake --build . && ./alpha
+```
