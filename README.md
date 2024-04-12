@@ -1,9 +1,9 @@
 # conan-xcode
 
 ## Requirements
-Git >= 2.39.3
-Python >= 3.12.2
-CMake >= 3.29.2
+* Git >= 2.39.3
+* Python >= 3.12.2
+* CMake >= 3.29.2
 
 ## Install Conan
 ```
