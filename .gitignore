@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Generated files and directories
+build/
+xcode/
+venv/
+.DS_Store
+CMakeUserPresets.json
+test_package/
