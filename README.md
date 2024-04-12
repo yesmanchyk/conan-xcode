@@ -38,3 +38,11 @@ popd
 ![alpha target in Xcode](img/target.png)
 
 7. Run with `Cmd+R`
+
+8. You may see the MacBook Air cannot run alpha error.
+![MacBook Air cannot run alpha error](img/run-error.png) 
+
+9. To fix that click on project, select `Build Settings` and search for `macOS Deployment Target`
+![macOS Deployment Target](img/deployment-target.png)
+
+10. Select your macOS version and you'll be able to run the project now.
