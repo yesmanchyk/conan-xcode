@@ -5,7 +5,7 @@ find_package(ut)
 
 add_executable(${PROJECT_NAME} src/alpha.cpp src/main.cpp)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE boost::ut)
+target_link_libraries(${PROJECT_NAME} PRIVATE Boost::ut)
 
 install(TARGETS alpha DESTINATION "."
         RUNTIME DESTINATION bin

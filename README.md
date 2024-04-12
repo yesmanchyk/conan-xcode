@@ -23,3 +23,10 @@ conan new cmake_exe -d version=1.0 -d name=alpha
 ```
 conan install . --output-folder=xcode --build=missing -s build_type=Debug
 ```
+
+4. Generate Xcode project
+```
+pushd xcode/build/Debug/generators/
+cmake ../../../.. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Debug -G Xcode
+popd
+```
