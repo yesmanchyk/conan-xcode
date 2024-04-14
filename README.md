@@ -15,6 +15,8 @@ pip install conan==2.2.2
 ## Conan Project `alpha`
 1. Create project
 ```
+conan profile detect --force
+sed -i 's/cppstd=gnu17/cppstd=gnu20/' $(conan profile path default)
 conan new cmake_exe -d version=1.0 -d name=alpha
 ```
 
